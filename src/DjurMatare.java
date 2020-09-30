@@ -46,8 +46,8 @@ public class DjurMatare {
         hotell.add(new Katt("Ove", 3000));
         hotell.add(new Orm("Hypno", 1000));
 
+        //Demonstration av getMat metoden.
         System.out.println(djurMatare.getMat(hotell.get(0)));
-        System.out.println(hotell.get(0).getClass().getSimpleName());
 
         djurMatare.mata(hotell);
     }
