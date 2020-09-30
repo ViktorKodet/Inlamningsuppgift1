@@ -13,6 +13,10 @@ public class Hund extends Djur{
     String mat = MatEnum.hundfoder.toString();
 
 
+    /**
+     * Räknar ut hur mycket mat djuret skall ha.
+     * @return sträng som är redo att skrivas ut.
+     */
     @Override
     public String hurMycketMat() {
         int mängdMat = getVikt() / 100;

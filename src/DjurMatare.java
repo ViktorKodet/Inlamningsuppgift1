@@ -4,7 +4,12 @@ import java.util.List;
 
 public class DjurMatare {
 
-
+    /**
+     * Letar i MatEnum efter maten som djuret som matar in skall ha.
+     * @param d djuret som behöver mat
+     * @return maten i en sträng
+     * ANVÄNDS INTE I NULÄGET, MEN ÄR GOOD TO GO
+     */
     public String getMat(Djur d) {
         for (MatEnum m : MatEnum.values()) {
             if (m.djurTyp.equals(d.getClass().getSimpleName())) {
@@ -14,6 +19,10 @@ public class DjurMatare {
         return null;
     }
 
+    /**
+     * scannar hotellet efter djuret som har matats in, och anropar sedan dess hurMycketMat metod.
+     * @param list hotellet
+     */
     public void mata(List<Djur> list) {
         HotellScanner hotellScanner = new HotellScanner();
         String input = JOptionPane.showInputDialog("Vilket djur ska få mat?");

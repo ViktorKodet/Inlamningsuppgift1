@@ -6,5 +6,10 @@
  */
 public interface Matbar {
 
+    /**
+     * Alla djur får räkna ut hur mycket mat de skall ha.
+     * eftersom att alla djur vill ha olika mängder mat får de räkna ut det själva.
+     * @return
+     */
     String hurMycketMat();
 }

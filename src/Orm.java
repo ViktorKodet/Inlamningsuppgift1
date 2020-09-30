@@ -12,6 +12,10 @@ public class Orm extends Djur{
     String mat = MatEnum.ormpellets.toString();
 
 
+    /**
+     * Räknar ut hur mycket mat djuret skall ha.
+     * @return sträng som är redo att skrivas ut.
+     */
     @Override
     public String hurMycketMat() {
         int mängdMat = 20;
